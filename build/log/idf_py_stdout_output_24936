@@ -1,0 +1,98 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403788fe
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1564
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xc80
+load:0x403cb700,len:0x2ee0
+entry 0x403c8914
+[0;32mI (26) boot: ESP-IDF v5.4.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jan  4 2026 10:37:04[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (27) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (28) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (28) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (28) boot: Enabling RNG early entropy source...[0m
+[0;32mI (28) boot: Partition Table:[0m
+[0;32mI (28) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (29) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (29) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (29) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (30) boot: End of partition table[0m
+[0;32mI (30) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0b608h ( 46600) map[0m
+[0;32mI (39) esp_image: segment 1: paddr=0001b630 vaddr=3fc94000 size=02fe0h ( 12256) load[0m
+[0;32mI (42) esp_image: segment 2: paddr=0001e618 vaddr=40374000 size=01a00h (  6656) load[0m
+[0;32mI (44) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1a974h (108916) map[0m
+[0;32mI (63) esp_image: segment 4: paddr=0003a99c vaddr=40375a00 size=0e588h ( 58760) load[0m
+[0;32mI (76) esp_image: segment 5: paddr=00048f2c vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (83) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (83) boot: Disabling RNG early entropy source...[0m
+[0;32mI (84) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (84) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (84) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (85) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (85) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (85) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (85) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (85) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (86) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (86) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (86) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (87) MSPI Timing: PSRAM timing tuning index: 4[0m
+[0;32mI (87) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (87) esp_psram: Speed: 80MHz[0m
+[0;32mI (88) cpu_start: Multicore app[0m
+[0;32mI (514) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (523) cpu_start: Pro cpu start user code[0m
+[0;32mI (523) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (523) app_init: Application information:[0m
+[0;32mI (523) app_init: Project name:     .[0m
+[0;32mI (523) app_init: App version:      ddb56bb[0m
+[0;32mI (523) app_init: Compile time:     Jan  4 2026 10:43:35[0m
+[0;32mI (523) app_init: ELF file SHA256:  c5757f07e...[0m
+[0;32mI (524) app_init: ESP-IDF:          v5.4.2[0m
+[0;32mI (524) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (524) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (524) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (524) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (525) heap_init: At 3FC97900 len 00051E10 (327 KiB): RAM[0m
+[0;32mI (525) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (525) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (526) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (527) spi_flash: detected chip: generic[0m
+[0;32mI (527) spi_flash: flash io: dio[0m
+[0;33mW (527) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (527) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (528) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (529) main_task: Started on CPU0[0m
+[0;32mI (539) esp_psram: Reserving pool of 64K of internal memory for DMA/internal allocations[0m
+[0;32mI (539) main_task: Calling app_main()[0m
+[0;32mI (1039) BOOT: app_main reached[0m
+[0;32mI (1039) BOOT: alive[0m
+[0;32mI (2039) BOOT: alive[0m
+[0;32mI (3039) BOOT: alive[0m
+[0;32mI (4039) BOOT: alive[0m
+[0;32mI (5039) BOOT: alive[0m
+[0;32mI (6039) BOOT: alive[0m
+[0;32mI (7039) BOOT: alive[0m
+[0;32mI (8039) BOOT: alive[0m
+[0;32mI (9039) BOOT: alive[0m
+[0;32mI (10039) BOOT: alive[0m
+[0;32mI (11039) BOOT: alive[0m
+[0;32mI (12039) BOOT: alive[0m
+[0;32mI (13039) BOOT: alive[0m
+[0;32mI (14039) BOOT: alive[0m
+[0;32mI (15039) BOOT: alive[0m
+[0;32mI (16039) BOOT: alive[0m
+[0;32mI (17039) BOOT: alive[0m
+[0;32mI (18039) BOOT: alive[0m
+[0;32mI (19039) BOOT: alive[0m
+[0;32mI (20039) BOOT: alive[0m
+[0;32mI (21039) RGB_TEST: Starting RGB test pattern[0m
+[0;32mI (21039) RGB_TEST: Framebuffer allocated: 261120 bytes[0m

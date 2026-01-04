@@ -1,0 +1,2 @@
+source D:/Espressif/esp-projects/Qualia-ESP32-S3-for-RGB-666-on-CLion-IDE/build/bootloader/gdbinit/symbols
+source D:/Espressif/esp-projects/Qualia-ESP32-S3-for-RGB-666-on-CLion-IDE/build/bootloader/gdbinit/connect
